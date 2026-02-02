@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>0f836861-3de2-4d7d-9732-e6f2f4545863</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CedulaManager.Application\CedulaManager.Application.csproj" />
+    <ProjectReference Include="..\CedulaManager.Infrastructure\CedulaManager.Infrastructure.csproj" />
+    <ProjectReference Include="..\CedulaManager.Persistence\CedulaManager.Persistence.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+	<PackageReference Include="MailKit" Version="4.14.1" />
+	<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.0" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
+		<PrivateAssets>all</PrivateAssets>
+		<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+	</ItemGroup>
+</Project>
