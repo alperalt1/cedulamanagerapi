@@ -65,7 +65,7 @@ namespace CedulaManager.WebApi.Controllers
         }
 
         [HttpPost("cambiarcontrasenawithCodigo")]
-        public async Task<IActionResult> CambiarContrasenaWithCodigo([FromBody] CodigoQuery command)
+        public async Task<IActionResult> CambiarContrasenaWithCodigo([FromBody] CambiarContrasenaWithCodigoCommand command)
         {
             var result = await _mediator.Send(command);
             if (!result.Success)
